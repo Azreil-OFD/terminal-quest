@@ -15,15 +15,18 @@
       "longDescription": "режимы", 
       "args": [
         {
-          "name": "mode",
-          "short": "m",
-          "takesValue": true,
-          "possibleValues": ["admin", "view"]
+          "name": "admin",
+          "short": "a"
+
         }
       ]
     },
     "allowlist": {
-      "all": true
+      "all": true,
+      "fs": {
+        "all": true,
+        "scope": ["**"]
+      }
     },
     "bundle": {
       "active": true,
